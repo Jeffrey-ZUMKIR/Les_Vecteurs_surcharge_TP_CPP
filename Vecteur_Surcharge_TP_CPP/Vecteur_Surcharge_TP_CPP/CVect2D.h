@@ -17,27 +17,25 @@ public:
 	~CVect2D();
 
 	//Accesseurs
-	int getX()const;
-	int getY()const;
+	float getX()const;
+	float getY()const;
 
 	//Mutateurs
 	void setX(float x);
 	void setY(float y);
 
-	//Somme de deux vecteurs
-	CVect2D SomVect(const CVect2D& v)const;
-
-	//Soustraction de deux vecteurs
-	CVect2D SousVect(const CVect2D& v)const;
-
-	//Multiplication de deux vecteurs
-	float MultVect(const CVect2D& v)const;
-
-	//Multiplication d'un vecteur et un scalaire
-	CVect2D MultVectScal(float flt_scal)const;
-
-	//Coincide
-	friend bool coincide2D(const CVect2D& v1, const CVect2D& v2);
+	//Opérateur +
+	CVect2D operator +(CVect2D& v)const;
+	//Opérateur -
+	CVect2D operator -(CVect2D& v)const;
+	//Opérateur * entre un vecteur et un scalaire
+	CVect2D operator *(float flt_scal)const;
+	//Opérateur * entre deux vecteurs
+	float operator *(CVect2D& v)const;
+	//Opérateur ==
+	bool operator ==(CVect2D& v)const;
+	//Opérateur !=
+	bool operator !=(CVect2D& v)const;
 
 	//Affichage
 	void AfficheLog()const;
