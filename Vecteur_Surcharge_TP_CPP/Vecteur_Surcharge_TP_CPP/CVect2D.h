@@ -17,8 +17,8 @@ public:
 	~CVect2D();
 
 	//Accesseurs
-	int getX()const;
-	int getY()const;
+	float getX()const;
+	float getY()const;
 
 	//Mutateurs
 	void setX(float x);
