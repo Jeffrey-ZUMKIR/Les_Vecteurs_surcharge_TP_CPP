@@ -99,6 +99,16 @@ float CVect2D::operator*(CVect2D& v) const
 	return flt_tot;
 }
 
+//BUT:   Assigner la valeur d'un vecteur à un autre
+//ENTREE:Un vecteur
+//SORTIE:Un vecteur
+CVect2D CVect2D::operator=(const CVect2D& v)
+{
+	this->flt_x = v.flt_x;
+	this->flt_y = v.flt_y;
+	return *this;
+}
+
 //BUT:   Vérifier si deux vecteurs sont égaux
 //ENTREE:Un vecteur
 //SORTIE:Un bool

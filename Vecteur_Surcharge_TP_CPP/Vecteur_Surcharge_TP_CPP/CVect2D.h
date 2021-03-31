@@ -32,6 +32,8 @@ public:
 	CVect2D operator *(float flt_scal)const;
 	//Opérateur * entre deux vecteurs
 	float operator *(CVect2D& v)const;
+	//Opérateur =
+	CVect2D operator =(const CVect2D& v);
 	//Opérateur ==
 	bool operator ==(CVect2D& v)const;
 	//Opérateur !=
