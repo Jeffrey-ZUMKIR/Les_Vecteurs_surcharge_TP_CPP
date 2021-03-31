@@ -1,7 +1,7 @@
 #include "CVect2D.h"
 //BUT:	 Initialisé les valeurs du vecteur
 //ENTREE:2 floats
-//SORTIE:le vecteur initialisé
+//SORTIE:le vecteur 2D initialisé
 CVect2D::CVect2D(float flt_x, float flt_y)
 {
 	this->flt_x = flt_x;
@@ -9,8 +9,8 @@ CVect2D::CVect2D(float flt_x, float flt_y)
 }
 
 //BUT:   Initialisé avec constructeur de copie
-//ENTREE:Un vecteur
-//SORTIE:Un vecteur
+//ENTREE:Un vecteur 2D
+//SORTIE:Un vecteur 2D
 CVect2D::CVect2D(const CVect2D& v)
 {
 	this->flt_x = v.flt_x;
