@@ -40,4 +40,7 @@ public:
 
 	//Affichage
 	void AfficheLog()const;
+
+	//Opérateur <<
+	friend ostream& operator<<(ostream& os, const CVect3D v);
 };

@@ -1,4 +1,7 @@
 #include "CVect3D.h"
+#include <iostream>
+
+using namespace std;
 
 //BUT:	 Initialisé les valeurs du vecteur
 //ENTREE:1 float
@@ -148,4 +151,12 @@ bool coincide3d(CVect3D& v1, CVect3D& v2)
 		return true;
 	}
 	return false;
+}
+//BUT:   Surchage opérateur <<
+//ENTREE:ostream et vecteur 3d
+//SORTIE:ostream
+ostream& operator<<(ostream& os, const CVect3D v)
+{
+	os << "X : " << v.getX() << ", Y : " << v.getY() << ", Z : " << v.flt_z << endl;
+	return os;
 }
